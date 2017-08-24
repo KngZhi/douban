@@ -49,7 +49,7 @@ export default {
   },
   filters: {
     subStr: function (value) {
-      value.replace(/<.+>|\s/, '')
+      value.replace(/<.*?>/g, '')
       return value.slice(0, 30)
     }
   }
